@@ -1,0 +1,20 @@
+//Contains the array and loops it to see if it matches to only evens
+function start(){
+	var arr = [1,2,3,5,8,13,21];
+	for(var i = 0; i < arr.length; i++){
+		var num = onlyEvens(arr);
+		println(num);
+	}
+}
+
+//Checks if the number matches mod 2 (is it even)
+function onlyEvens(list){
+	var no = [];
+	for(var i = 0; i < list.length; i++){
+		var x = list[i];
+		if(x % 2 == 0){
+			no.push(x);
+		}
+	}
+	return(no);
+}
